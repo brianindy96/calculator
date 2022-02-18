@@ -1,0 +1,59 @@
+:root{
+    --blue: #38f8d4;
+    --blue2: #32717a;
+    --love: #ff887c;
+    --passion: #b6325f;
+
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&family=Shizuru&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+}
+
+body{
+    background-image: linear-gradient(var(--love),var(--passion));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    height: 1000px;
+    background-image: linear-gradient(#cd4d89,#422357);
+    width: 800px;
+    border: 1px black solid;
+    border-radius: 20px;
+    position: relative;
+}
+
+
+.btn-container{
+    height: 700px;
+    position: absolute;
+    width: 800px;
+    bottom: 0;
+    display: flex;
+    flex-wrap: wrap;
+    left: 0;
+}
+
+.btn{
+    cursor: pointer;
+    font-family: 'Shizuru', cursive;
+    height: auto;
+    width: 200px;
+    border-radius: 15%;
+    background-color: white;
+    opacity: 0.5;
+    font-size: 2em;
+    font-weight: 900;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+
