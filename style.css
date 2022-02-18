@@ -6,7 +6,7 @@
 
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&family=Shizuru&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&family=Shizuru&family=Ultra&display=swap');
 
 *{
     padding: 0;
@@ -28,8 +28,25 @@ body{
     border: 1px black solid;
     border-radius: 20px;
     position: relative;
+    display: flex;
 }
 
+.display{
+    height: 200px;
+    width: 700px;
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    background-color: lightblue;
+    border-radius: 10px;
+    text-align: end;
+}
+
+.display h2{
+    font-size: 70px;
+    padding-top: 80px;
+    padding-right: 10px; 
+}
 
 .btn-container{
     height: 700px;
@@ -43,7 +60,7 @@ body{
 
 .btn{
     cursor: pointer;
-    font-family: 'Shizuru', cursive;
+    font-family: 'Ultra', serif;
     height: auto;
     width: 200px;
     border-radius: 15%;
@@ -52,6 +69,10 @@ body{
     font-size: 2em;
     font-weight: 900;
 }
+.btn:hover{
+    letter-spacing: 3px;
+}
+
 a{
     text-decoration: none;
     color: black;
