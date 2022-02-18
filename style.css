@@ -3,6 +3,7 @@
     --blue2: #32717a;
     --love: #ff887c;
     --passion: #b6325f;
+    --container-size: 600px;
 
 }
 
@@ -12,6 +13,8 @@
     padding: 0;
     margin: 0;
     height: 100vh;
+    box-sizing: border-box;
+    overflow: hidden;
 }
 
 body{
@@ -22,52 +25,58 @@ body{
 }
 
 .container{
-    height: 1000px;
+    height: 800px;
     background-image: linear-gradient(#cd4d89,#422357);
-    width: 800px;
+    width: var(--container-size);
     border: 1px black solid;
     border-radius: 20px;
     position: relative;
     display: flex;
+    padding: 20px;
 }
 
 .display{
-    height: 200px;
-    width: 700px;
+    height: 175px;
+    width: var(--container-size);
     position: absolute;
-    top: 50px;
-    left: 50px;
+    top: 0;
+    left: 0;
     background-color: lightblue;
     border-radius: 10px;
     text-align: end;
-}
-
-.display h2{
+    display: flex;
+    justify-content: flex-end;
+    padding-bottom: 10px;
+    padding-right: 30px;
+    align-items: flex-end;
+    text-align: right;
+    line-height: 70px;
     font-size: 70px;
-    padding-top: 80px;
-    padding-right: 10px; 
 }
 
 .btn-container{
-    height: 700px;
     position: absolute;
-    width: 800px;
     bottom: 0;
-    display: flex;
-    flex-wrap: wrap;
     left: 0;
+    height: 610px;
+    width: var(--container-size);
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+    grid-template-rows: repeat(5, 20%);
+    padding-bottom: 30px;
+    grid-row-gap: 10px;
+    
 }
-
 .btn{
-    cursor: pointer;
-    font-family: 'Ultra', serif;
+    color: white;
+    background-color: black;
+    border: none;
+
+    font-size: 30px;
     height: auto;
-    width: 200px;
-    border-radius: 15%;
-    background-color: white;
-    opacity: 0.5;
-    font-size: 2em;
-    font-weight: 900;
+    width: 130.5px;
+    border-radius: 30%;
+    
 }
 .btn:hover{
     letter-spacing: 3px;
