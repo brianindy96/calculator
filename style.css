@@ -3,87 +3,66 @@
     --blue2: #32717a;
     --love: #ff887c;
     --passion: #b6325f;
-    --container-size: 600px;
+    --container-size: 400px;
+    --softness: #ffd1fc;
+    --touch: #fad0c6;
 
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&family=Shizuru&family=Ultra&display=swap');
 
-*{
-    padding: 0;
-    margin: 0;
-    height: 100vh;
-    box-sizing: border-box;
-    overflow: hidden;
-}
-
 body{
-    background-image: linear-gradient(var(--love),var(--passion));
+    background-image: linear-gradient(var(--softness),var(--touch));
+    height: 100vh;
+    margin: 0;
+    padding: 0;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .container{
-    height: 800px;
-    background-image: linear-gradient(#cd4d89,#422357);
+    height: 600px;
     width: var(--container-size);
-    border: 1px black solid;
-    border-radius: 20px;
-    position: relative;
+    border: 1px solid black;
     display: flex;
-    padding: 20px;
+    flex-direction: column;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 5px 5px 8px black;
+    background-image: linear-gradient(var(--love),var(--passion));
 }
 
 .display{
-    height: 175px;
-    width: var(--container-size);
-    position: absolute;
-    top: 0;
-    left: 0;
-    background-color: lightblue;
-    border-radius: 10px;
-    text-align: end;
     display: flex;
     justify-content: flex-end;
-    padding-bottom: 10px;
-    padding-right: 30px;
     align-items: flex-end;
-    text-align: right;
-    line-height: 70px;
-    font-size: 70px;
+    width: var(--container-size);
+    flex: 1;  
+    font-size: 40px;
 }
 
 .btn-container{
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    height: 610px;
-    width: var(--container-size);
     display: grid;
-    grid-template-columns: repeat(4, 25%);
-    grid-template-rows: repeat(5, 20%);
-    padding-bottom: 30px;
-    grid-row-gap: 10px;
-    
+    grid-template-columns: repeat(4,25%);
+    grid-template-rows: repeat(5,25%);
+    flex: 3;
 }
+
 .btn{
-    color: white;
-    background-color: black;
-    border: none;
-
-    font-size: 30px;
-    height: auto;
-    width: 130.5px;
-    border-radius: 30%;
-    
+    background-color: var(--love);
+    opacity: 0.5;
+    font-size: 20px;
+    font-weight: 800;
+    cursor: pointer;
 }
+
 .btn:hover{
-    letter-spacing: 3px;
+    transform: scale(0.98);
 }
-
 a{
     text-decoration: none;
     color: black;
 }
+
 
