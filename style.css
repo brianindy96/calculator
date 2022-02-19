@@ -11,6 +11,10 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&family=Shizuru&family=Ultra&display=swap');
 
+*{
+    font: 'Roboto', sans-serif;
+}
+
 body{
     background-image: linear-gradient(var(--softness),var(--touch));
     height: 100vh;
@@ -33,6 +37,7 @@ body{
     background-image: linear-gradient(var(--love),var(--passion));
 }
 
+
 .display{
     display: flex;
     justify-content: flex-end;
@@ -45,16 +50,24 @@ body{
 .btn-container{
     display: grid;
     grid-template-columns: repeat(4,25%);
-    grid-template-rows: repeat(5,25%);
+    grid-template-rows: repeat(5,20%);
     flex: 3;
 }
 
-.btn{
+.btn,
+.num,
+.operator,
+.decimal,
+.delete,
+.percent,
+.equals{
     background-color: var(--love);
     opacity: 0.5;
     font-size: 20px;
     font-weight: 800;
     cursor: pointer;
+    transition: ease 0.07s;
+    border-radius: 10px;
 }
 
 .btn:hover{
