@@ -26,7 +26,7 @@ function multiply(a, b) {
 
 function divide(a, b) {
     if (parseFloat(b) == 0) {
-        return "Ha! Nice try!";
+        return "MATH ERROR";
     }
     return parseFloat(a) / parseFloat(b);
 }
