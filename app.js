@@ -68,7 +68,7 @@ let get_operations = operations.forEach(ops => {
 });
 
 // Decimal s
-let decimalPoint = decimal.addEventListener('click', () => {
+let getDecimals = decimal.addEventListener('click', () => {
     if (op == '' && num1.includes('.') == false) {
         num1 += '.';
         display.textContent += '.';
@@ -80,7 +80,7 @@ let decimalPoint = decimal.addEventListener('click', () => {
 })
 
 // Get Numbers
-let get_Numbers = nums.forEach(num => {
+let getNumbers = nums.forEach(num => {
     num.addEventListener('click', function () {
         if (!num1 || !op) {
             num1 += parseFloat(num.textContent);

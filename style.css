@@ -45,6 +45,7 @@ body{
     width: var(--container-size);
     flex: 1;  
     font-size: 40px;
+
 }
 
 .btn-container{
